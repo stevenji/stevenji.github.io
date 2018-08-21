@@ -1,0 +1,53 @@
+---
+layout:     post
+title:      "Welcome to Steven Ji's Blog"
+subtitle:   " \"how to use git command\""
+date:       2018-08-21 19:00:00
+author:     "steven"
+header-img: "img/post-bg.jpg"
+tags:
+    - Software
+---
+
+> “Yeah It's on. ”
+
+
+## git基本操作 
+1. clone到本地  
+2. 修改/增加一个文件  
+   $git add add.c     #add/modify one file  
+   $git commit -m "xxxx"  #commit to local branch  
+   $git status  #check local status  
+   $git push       #push modification to remote server  
+
+
+
+<p id = "build"></p>
+---
+
+##问题 
+1. 由于github仓库中提前建立readme文件，导致git push报错error: failed to push some refs to 'git@github.com:  
+   $ git push -u origin master  
+   To git@github.com:xxx/xxx.git  
+   ! [rejected]        master -> master (fetch first)
+   error: failed to push some refs to 'git@github.com:xxx/xxx.git'
+   hint: Updates were rejected because the remote contains work that you do
+   hint: not have locally. This is usually caused by another repository pushing
+   hint: to the same ref. You may want to first integrate the remote changes
+   hint: (e.g., 'git pull ...') before pushing again.
+   hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ 
+ A:github远程仓库中README.md文件不在本地
+   方法1. $ git pull --rebase origin master  
+          $ git push -u origin master  
+   方法2. $ git push orign +master  #强制push
+
+---
+
+
+## 命令
+
+## 参考
+1.  
+2.
+ 

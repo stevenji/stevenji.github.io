@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Welcome to Steven Ji's Blog"
-subtitle:   " \"how to use git command\""
+title:      "How to use git command"
+subtitle:   " \"\""
 date:       2018-08-21 19:00:00
 author:     "steven"
 header-img: "img/post-bg.jpg"
